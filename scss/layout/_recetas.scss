@@ -1,0 +1,58 @@
+$color1: orangered;
+$color2: orange;
+section{
+      
+     .leyenda2{
+        text-align: center;
+        border-bottom: solid 2px;
+        border-color: $color2;
+        span{
+            color: $color1;
+            em{
+             color: red;
+            }
+        }
+       }    
+
+       }
+
+.recetas-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 1rem;
+    .grid-item{
+         border: solid 4px;
+        border-color: black;
+        padding: 5px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        h2{
+            border-radius: 5%;
+            margin-top: 5px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 5%;
+            margin-bottom: 5px;
+            
+        }
+        p{ color: black;
+            border-radius: 2%;
+            background-color: $color2; 
+            padding: 30px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 3s;
+        }
+
+        p:hover{
+            transform: scale(0.50);
+        }
+            
+    }
+
+}       
+

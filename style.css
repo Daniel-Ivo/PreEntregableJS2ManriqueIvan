@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  border-bottom: solid 3px;
+  border-color: orange;
+  padding: 3px;
+}
+header .navbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: whitesmoke;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  transition: 5s;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  transform: translate(5px);
+}
+header .logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid orangered;
+}
+
+section h4 {
+  border-top: 25px;
+  text-align: center;
+  background-image: linear-gradient(to left, orange, orangered);
+}
+section .leyenda {
+  background-color: orange;
+}
+section .leyenda p {
+  text-align: center;
+}
+
+section #carouselExample .carousel-inner {
+  display: flex;
+  align-content: center;
+}
+section #carouselExample .carousel-inner .carousel-item img {
+  margin-left: 25%;
+  width: 50%;
+  height: auto;
+  border-radius: 5%;
+}
+section #carouselExample .carousel-control-prev .carousel-control-prev-icon {
+  background-color: orangered;
+}
+section #carouselExample .carousel-control-next .carousel-control-next-icon {
+  background-color: orangered;
+}
+
+div a .logo-wpp {
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
+  height: auto;
+  transition: 3s;
+}
+
+.logo-wpp:hover {
+  transform: rotate(360deg);
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .Grid-container {
+  display: flex;
+  grid-gap: 20px;
+  padding: 1rem;
+  background: radial-gradient(circle, rgb(255, 98, 0) 24%, rgb(255, 201, 0) 100%);
+}
+footer .Grid-container .grid-item {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+footer .Grid-container .grid-item img {
+  width: 50%;
+  height: auto;
+  box-shadow: none;
+}
+footer .Grid-container .grid-item a {
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: 5s;
+}
+footer .Grid-container .grid-item a:hover {
+  transform: translate(5%);
+}
+
+section .navbar {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: whitesmoke;
+}
+section .navbar div a .logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid orangered;
+}
+
+h4 {
+  border-top: 25px;
+  text-align: center;
+  background-color: orangered;
+}
+
+main .Grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+main .Grid-container .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+main .Grid-container .grid-item .diploma {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  padding: 5px;
+}
+main .nosotros p {
+  color: black;
+  background: radial-gradient(circle, rgb(255, 201, 0) 24%, rgb(255, 98, 0) 100%);
+  padding: 30px;
+  justify-content: center;
+}
+
+section .leyenda2 {
+  text-align: center;
+  border-bottom: solid 2px;
+  border-color: orange;
+}
+section .leyenda2 span {
+  color: orangered;
+}
+section .leyenda2 span em {
+  color: red;
+}
+
+.recetas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+.recetas-container .grid-item {
+  border: solid 4px;
+  border-color: black;
+  padding: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.recetas-container .grid-item h2 {
+  border-radius: 5%;
+  margin-top: 5px;
+}
+.recetas-container .grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 5px;
+}
+.recetas-container .grid-item p {
+  color: black;
+  border-radius: 2%;
+  background-color: orange;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 3s;
+}
+.recetas-container .grid-item p:hover {
+  transform: scale(0.5);
+}
+
+@media only screen and (max: 424px) {
+  .Grid-container {
+    grid-template-rows: 1 auto;
+    text-align: center;
+    row-gap: 5px;
+  }
+  .Diploma img {
+    align-content: center;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.Grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+.Grid-container .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.Grid-container .grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Josefin Sans {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5%;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+p {
+  background: rgb(255, 201, 0);
+  background: radial-gradient(circle, rgb(255, 201, 0) 24%, rgb(255, 98, 0) 100%);
+}
+
+.Grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+.Grid-container .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: 5%;
+}
+.Grid-container .grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Grid-container .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.Grid-container .grid-item h2 {
+  color: black;
+}
+
+h4 {
+  border-top: 25px;
+  text-align: center;
+  background-image: linear-gradient(to left, orange, orangered);
+}
+
+main .Grid-container {
+  display: grid;
+  margin-left: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+main .Grid-container .grid-item {
+  justify-content: center;
+}
+main .Grid-container .grid-item a {
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

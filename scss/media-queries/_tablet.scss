@@ -1,0 +1,16 @@
+@media (min-width: 427px) and (max-width: 767px){
+        .Grid-container{
+            grid-template-rows: 1 auto;
+            text-align: center;
+            row-gap: 5px;
+        }
+        .Diploma img{
+           align-content: center;
+        }
+    
+          img{
+            max-width: 100%;
+            
+          }
+    
+}

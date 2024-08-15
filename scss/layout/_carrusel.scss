@@ -1,0 +1,36 @@
+   section{
+        #carouselExample{
+            
+          .carousel-inner{ 
+               display: flex;
+               align-content: center;
+             .carousel-item{
+                   img{
+                       margin-left: 25%;
+                       width: 50%;
+                       height: auto;
+                       border-radius: 5%;
+                      }
+                
+                }
+
+
+        
+ 
+            }
+
+            .carousel-control-prev{
+                .carousel-control-prev-icon{
+                background-color: orangered;
+             }
+            }
+
+
+            .carousel-control-next{
+                .carousel-control-next-icon{
+                    background-color: orangered;
+                }
+            }
+         }
+     }
+     

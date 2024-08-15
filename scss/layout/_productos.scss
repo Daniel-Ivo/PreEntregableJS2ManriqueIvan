@@ -1,0 +1,23 @@
+h4{ border-top: 25px;
+    text-align: center;
+    background-image: linear-gradient(to left, $color2, $color1);
+ }
+
+
+main{
+    .Grid-container{
+        display: grid;
+        margin-left: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        padding: 1rem;
+        .grid-item{
+            justify-content: center;
+    
+                a{
+                 color: black;
+                 text-decoration: none;
+                }
+        }
+    }
+}

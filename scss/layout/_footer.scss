@@ -1,0 +1,41 @@
+ footer{
+         padding: 20px;
+         display: flex;
+         justify-content: center;
+         .Grid-container{
+                   display: flex;
+                   grid-gap: 20px;
+                   padding: 1rem;
+                   background: radial-gradient(circle, rgb(255, 98, 0) 24%, rgb(255, 201, 0) 100%);
+                   
+                   
+                  
+                 .grid-item{ 
+                  display: flex;
+                  align-items: center; 
+                  margin: auto;
+                     img{
+                     width: 50%;
+                     height: auto;
+                     box-shadow: none;
+                    }  
+                    a{
+
+                     align-items: center;
+                     text-decoration: none;
+                     color: black;
+                     transition: 5s;
+                    } 
+                    a:hover{
+                      transform: translate(5%);
+                    } 
+              
+                  }
+
+               
+                }
+             }
+
+
+      
+  
