@@ -5,7 +5,7 @@ const productos = [{ name: 'Condimentos',},{ name: 'Escabeches'},{ name: 'Frutos
 buscarButton.addEventListener('click', (event) => {
   event.preventDefault();
   const buscar = buscarInput.value.toLowerCase();
-  const resultado = productos.filter(producto => producto.toLowerCase().includes(buscar));
+  const resultado = productos.filter(productobuscado => productobuscado.toLowerCase().includes(buscar));
   console.log(resultado);
 });
 
@@ -15,7 +15,7 @@ const ListadeProductos = document.getElementById('ListadeProductos');
 
 function MostrarProductos(productos) {
     ListadeProductos.innerHTML = '';
-    productos.forEach(producto => {
+    productos.forEach(productobuscado => {
       const li = document.createElement('li');
       li.textContent = `${productos.name} - $`;
       ListadeProductos.appendChild(li); 

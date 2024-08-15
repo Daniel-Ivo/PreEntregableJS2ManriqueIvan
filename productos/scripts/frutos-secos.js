@@ -38,8 +38,12 @@ function ActualizarCarrito() {
   });
 
   total.textContent = `Total: $${totalCarrito}`;
+  localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    ActualizarCarrito()
+})
 
 
