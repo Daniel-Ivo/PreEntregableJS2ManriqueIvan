@@ -5,7 +5,7 @@ const carritoLista = document.getElementById('carrito-lista');
 const   
  total = document.getElementById('total');
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 carritoBtn.addEventListener('click', () => {
   carritoContainer.style.display = 'block';
@@ -18,11 +18,44 @@ productos.forEach(producto => {
   producto.appendChild(botonComprar);
 
   botonComprar.addEventListener('click', () => {
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger"
+      },
+      buttonsStyling: false
+    });
+    swalWithBootstrapButtons.fire({
+      title: "Lo agregamos al carrito?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Si",
+      cancelButtonText: "No",
+      reverseButtons: true
+    }).then((result) => {
+      if (result.isConfirmed) {
+        swalWithBootstrapButtons.fire({
+          title:" el articulo fue agregado al carrito",
+          icon: "success"
+        });
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire({
+          title: "Cancelado",
+          text: "El producto no fue agregado al carrito",
+          icon: "error"
+        });
+      }
+    });
     const nombreProducto = producto.querySelector('p').textContent;
     const precio = 3500;
     carrito.push({ nombre: nombreProducto, precio });
     ActualizarCarrito();
-  });
+   })
+  
+
 });
 
 function ActualizarCarrito() {
