@@ -5,7 +5,7 @@ const productos = [{ name: 'Condimentos',},{ name: 'Escabeches'},{ name: 'Frutos
 buscarButton.addEventListener('click', (event) => {
   event.preventDefault();
   const buscar = buscarInput.value.toLowerCase();
-  const resultado = productos.filter(productobuscado => productobuscado.toLowerCase().includes(buscar));
+  const resultado = productos.filter(productobuscado => productobuscado.name.toLowerCase().includes(buscar));
   console.log(resultado);
 });
 
